@@ -1,0 +1,21 @@
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0.7;
+    letter-spacing: 1.2px;
+}
+
+input {
+    min-height: 49px;
+    padding: 16px 14px;
+    display: block;
+    background-color: #fff;
+    color: #323232;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 0 14px 8px 0;
+    min-height: initial;
+}

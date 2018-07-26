@@ -1,0 +1,59 @@
+nav {
+    background-color: #fff;
+    height: 50px;
+}
+
+.nav-content {
+    padding: 17px 20px;
+}
+
+.wizard {
+    background-color: #fff;
+    box-shadow: 3px 10px 14px 0 #dddddd, 0 3px 15px 0 #dddddd;
+    padding: 40px 78px;
+    margin-top: 20px;
+}
+
+hr {
+    margin: 20px -78px 60px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 1.9px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0.7;
+    letter-spacing: 1.2px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.form-field select {
+    min-height: 49px;
+    padding: 16px 14px;
+    display: block;
+    background-color: #fff;
+    color: #323232;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}

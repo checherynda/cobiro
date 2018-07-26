@@ -1,0 +1,93 @@
+.header {
+    width: 100%;
+    height: 53px;
+    line-height: 53px;
+    background: #323232;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.header > img {
+    height: 21px;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-left: 33px;
+}
+
+.ml8 {
+    margin-left: 8%;
+}
+
+.background {
+    margin-top: 143px;
+    background-image: url('/assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 2.2px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+a {
+    color: #323232;
+    text-decoration: underline;
+}
+
+.form-field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #323232;
+    margin-bottom: 5px;
+}
+
+.form-field input, .form-field select, .form-field textarea {
+    min-height: 49px;
+    padding: 16px 14px;
+    display: block;
+    background-color: #fff;
+    color: #323232;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+    box-shadow: none;
+}
+
+.form-action {
+    width: 100%;
+    margin-top: 25px;
+}
+
+small {
+    padding-top: 8px;
+    font-size: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.error {
+    color: red;
+}

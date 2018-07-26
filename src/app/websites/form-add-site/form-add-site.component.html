@@ -1,0 +1,28 @@
+<div class="row mb40">
+    <div class="col-md-12">
+        <h2 class="mb15">Your website address:</h2>
+        <p class="mb40">Cobiro will analyze the content of your website and generate both keywords and advertisement copy from it.</p>
+    </div>
+    <div class="col-md-8">
+        <div class="form-field">
+            <input [(ngModel)]="model.website" type="text" placeholder="www.domain.com" required>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="mb15">Your business name:</h2>
+        <p class="mb40">Your business name will be used to recognize advertisement related to the above url. It will also be used in suggestions
+            for your advertisement content.</p>
+    </div>
+    <div class="col-md-8">
+        <div class="form-field">
+            <input [(ngModel)]="model.name" name="sitename" type="text" placeholder="Your company name" required>
+            <div class="row action mt70">
+                <div class="col-md-4">
+                    <button class="btn-primary" (click)="submit()" [disabled]="isDisabled">{{ isEditMode ? 'Edit' : 'Add' }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    color: #323232;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mt70 {
+    margin-top: 70px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.form-field {
+    margin-bottom: 35px;
+}
+
+button.btn-primary {
+    width: 100%;
+    border: 0;
+    border-radius: 100px;
+    color: #323232;
+    background-color: #ffc700;
+    opacity: 0.6;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding: 0 30px;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+button.disabled {
+    background-color: #a7a6a43f;
+}
+
+input::placeholder {
+    color: #3b3b393f;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1136px;
+    }
+}

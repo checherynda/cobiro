@@ -1,0 +1,66 @@
+<nav class="header">
+    <img alt="COBIRO" src="/assets/logo-white.svg">
+</nav>
+<div class="background">
+    <div class="container container-fluid">
+        <div class="ml8">
+            <div class="row" [ngClass]="errorMessage ? 'mb20' : 'mb40'">
+                <div class="col-xs-12 col-sm-10">
+                    <h1>Get started with your free Cobiro account!</h1>
+                    <h4>Create a free Cobiro account to automate all your Google advertisement.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <form>
+                        <span class="error" *ngIf="errorMessage">{{ errorMessage }}</span>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-field">
+                                    <label>Email</label>
+                                    <input [(ngModel)]="model.email" name="email" type="email" placeholder="Email..." required>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-field">
+                                    <label>Password</label>
+                                    <input [(ngModel)]="model.password" maxlength="128" minlength="6" name="password" type="password" placeholder="******" required>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-field">
+                                    <label>First name</label>
+                                    <input [(ngModel)]="model.first_name" name="first_name" type="text" placeholder="First name..." required>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-field">
+                                    <label>Last name</label>
+                                    <input [(ngModel)]="model.last_name" name="last_name" type="text" placeholder="Last name..." required>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-field">
+                                    <label>In which country is your company based?</label>
+                                    <select [(ngModel)]="model.country_code" name="country" required>
+                                        <option>Select your country</option>
+                                        <option *ngFor="let country of availableCountries | forin" [value]="country.key">{{ country.value }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-5 ml8 form-action">
+                                <button class="btn-primary" type="submit" (click)="submit()">Register</button>
+                                <div class="text-right">
+                                    <small>By clicking this button, you agree to Cobiro’s</small>
+                                    <a href="https://cobiro.com/terms-of-use.php" target="_blank">
+                                        <small>Terms &amp; Conditions</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<nav class="header">
+    <div class="nav-content">
+        <h2>Setup Cobiro for Websites</h2>
+    </div>
+</nav>
+
+<div class="container container-fluid">
+    <div class="row mt30" *ngIf="sites">
+        <ng-container *ngIf="sites.length; else noWebsites">
+            <div class="col-md-4">
+                <h2 class="mb15">Your websites</h2>
+                <div class="form-field">
+                    <select [(ngModel)]="selectedSiteId" name="country" required>
+                        <option *ngFor="let site of sites" [value]="site.id">{{ site.website }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3 mt30">
+                <button class="btn-primary" (click)="editWebsite()">Edit</button>
+            </div>
+        </ng-container>
+    </div>
+    <ng-template #noWebsites>
+        <div class="col-md-8">
+            <h2 class="mb15">You have no websites added. Start with adding a website.</h2>
+        </div>
+    </ng-template>
+    <div class="wizard">
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Setup cobiro for websites</h5>
+                <h1>Add the website you want to advertise</h1>
+                <p>For businesses that want to bring new customers to the frontpage of their website.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/for-web.png">
+            </div>
+        </div>
+        <hr>
+        <form-add-site (addSiteEvent)="reloadWebsites()" [model]="selectedSite" [isEditMode]="isEditMode"></form-add-site>
+    </div>
+</div>
